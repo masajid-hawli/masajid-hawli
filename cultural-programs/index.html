@@ -1,0 +1,48 @@
+<!-- @dsCard group="Cultural Programs" viewport="1280x800" name="Cultural Programs — App" subtitle="Login → dashboard → programs (interactive)" -->
+<!-- @startingPoint section="Cultural Programs" subtitle="Full RTL management app: login, dashboard, programs" viewport="1280x800" -->
+<template id="__bundler_thumbnail" data-bg-color="#0a5e3e">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#0a5e3e"/>
+    <text x="600" y="350" font-size="80" font-family="Cairo, sans-serif" font-weight="bold" fill="#f5e6d3" text-anchor="middle" dominant-baseline="middle">مساجد حولي</text>
+    <text x="600" y="450" font-size="40" font-family="Tajawal, sans-serif" fill="#b8956a" text-anchor="middle">قسم البرامج الثقافية</text>
+    <circle cx="200" cy="700" r="40" fill="#1f8a5b" opacity="0.7"/>
+    <circle cx="1000" cy="100" r="60" fill="#b8956a" opacity="0.5"/>
+  </svg>
+</template>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>مساجد حولي — قسم البرامج الثقافية</title>
+<link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js"></script>
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+<!-- Firebase SDK (must load before config) -->
+<script defer src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js"></script>
+<script defer src="https://www.gstatic.com/firebasejs/10.7.0/firebase-auth.js"></script>
+<script defer src="https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js"></script>
+<!-- Firebase Config & Services (wait for SDK to load) -->
+<script defer src="firebase-config.js"></script>
+<script defer src="services/auth-service.js"></script>
+<script defer src="services/data-service.js"></script>
+<style>html,body{margin:0;min-height:100vh;background:var(--surface-app);}</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel" src="kit-ui.jsx"></script>
+<script type="text/babel" src="data.jsx"></script>
+<script type="text/babel" src="LoginScreen.jsx"></script>
+<script type="text/babel" src="AppShell.jsx"></script>
+<script type="text/babel" src="DashboardScreen.jsx"></script>
+<script type="text/babel" src="ProgramsScreen.jsx"></script>
+<script type="text/babel" src="HalaqatScreen.jsx"></script>
+<script type="text/babel" src="LessonsWomenScreen.jsx"></script>
+<script type="text/babel" src="LessonsMenScreen.jsx"></script>
+<script type="text/babel" src="ImamsScreen.jsx"></script>
+<script type="text/babel" src="GuestsScreen.jsx"></script>
+<script type="text/babel" src="app.jsx"></script>
+</body>
+</html>
