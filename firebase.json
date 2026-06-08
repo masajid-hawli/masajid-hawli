@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": ".",
+    "public": "cultural-programs"
     "ignore": [
       "firebase.json",
       "**/.*",
